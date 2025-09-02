@@ -15,7 +15,7 @@ def main():
 
     # Replace "your_table" with a real table in your Supabase project
     # For demo purposes: SELECT * LIMIT 5
-    response = supabase.table("study_sessions").select("student_name").limit(5).execute()
+    response = supabase.table("study_sessions").select("*").limit(5).execute()
 
     # response.data is a list of dict rows
     print("Rows:")
